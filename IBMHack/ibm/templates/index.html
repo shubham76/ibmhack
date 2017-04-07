@@ -1,0 +1,73 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<form action="/hack/signup" method="post">
+		{% csrf_token %}
+		  <div class="container">
+		    <label><b>Name:</b></label>
+		    <input type="text" placeholder="Name" name="name" required>
+			<br>
+		    <label><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="pass" required>
+			<br>
+		    <label><b>Weight</b></label>
+		    <input type="text" placeholder="Enter Weight" name="weight" required>
+			<br>
+			<br>
+		    <label><b>Height</b></label>
+		    <input type="text" placeholder="Enter Height" name="height" required>
+			<br>
+		    <label><b>Age</b></label>
+		    <input type="text" placeholder="Enter Age" name="age" required>
+			<br>
+			<label><b>Gender</b></label>
+			<select name="gender">
+			  <option value="male">Male</option>
+			  <option value="female">Female</option>
+			</select>
+			<br>
+			<label><b>Activity</b></label>
+			<select name="activity">
+			  <option value="1">Sedentary</option>
+			  <option value="2">Low Active</option>
+			  <option value="3">Active</option>
+			  <option value="4">High Active</option>
+			</select>
+		    <div>
+		      <button type="submit">Sign Up</button>
+		    </div>
+		  </div>
+		</form>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p align="center">{%if msg%}{{msg}}{%endif%}</p>
+		<form action="/hack/login" method="POST">
+		{% csrf_token %}
+		  <div class="container">
+		    <label><b>Name:</b></label>
+		    <input type="text" placeholder="Name" name="name" required>
+
+		    <label><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="password" required>
+
+		   
+		    <div class="clearfix">
+		      <button type="submit" class="signupbtn">Log In</button>
+		    </div>
+		  </div>
+		</form>
+
+
+
+
+
+
+	</body>
+</html>
