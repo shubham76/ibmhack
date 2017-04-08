@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'hack',
+    'hack', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -104,4 +104,4 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = ['/home/shubham/Desktop/IBMWatson/IBM/hack/static',]
 
-MEDIA_ROOT = '/home/shubham/Desktop/BMWatson/IBM/hack/static'
+MEDIA_ROOT = '/home/shubham/Desktop/IBMWatson/IBM/hack/static'

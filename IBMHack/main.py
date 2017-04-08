@@ -38,6 +38,8 @@ breakfast = {'espresso':9,'pepperoni pizza':800,'chip':500,'french fries':500,'c
 
 food = OrderedDict(sorted(breakfast.items(), key=itemgetter(1)))
 
+print food
+
 reward={'biscuit':50,'rosogulla':100,'jalebi':150,'ice-cream':200,'sponge cake':250,'chocolate cake':300,'shrikhand':350,'tacos':400,'potato chips':450,'french fries':500,'donuts':550,'subway sandwich':600,'kfc krisper':650,'burger':700,'ice-cream-shake':750,'pizza':800}
 
 li = ["cabbage", "potato chips", "desert", "coriander", "moong dal", "curry",  "jackfruit", "channa dal", "chickoo", "custard apple"]
